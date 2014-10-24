@@ -25,6 +25,7 @@ class LinkingTests(TestCase):
         """
         Containers can be linked to using network ports.
         """
+        getting_nodes = get_nodes(num_nodes=2)
 
         getting_nodes.addCallback(deploy)
         return getting_nodes
